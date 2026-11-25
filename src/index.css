@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --brand-navy: #0B1F3A;
+    --brand-navy-light: #153156;
+    --brand-teal: #0EA5A4;
+    --brand-orange: #F97316;
+    --brand-orange-hover: #EA580C;
+    --surface-bg: #F6F9FC;
+  }
+
+  html {
+    font-family: 'Cairo', 'Tajawal', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    direction: rtl;
+    overflow-x: hidden;
+  }
+
+  body {
+    font-family: 'Cairo', 'Tajawal', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow-x: hidden;
+    background-color: #F6F9FC;
+    color: #0B1F3A;
+  }
+}
+
+@keyframes pulse-border {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(14, 165, 164, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(14, 165, 164, 0);
+  }
+}
+
+.highlight-booking-pulse {
+  animation: pulse-border 1.4s ease-in-out 2;
+}
